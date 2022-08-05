@@ -275,7 +275,7 @@ def main(input_options, libmode=False):
                 P.setp(ylabels, fontsize=7)
 
                 # colour the plot depending on the strain pattern
-                sp.set_axis_bgcolor(colourDict[patt])
+                sp.set_facecolor(colourDict[patt])
 
                 # plot the data
                 P.plot([strain[0, index2-1], strain[numsteps-1, index2-1]], [cijFitted *
